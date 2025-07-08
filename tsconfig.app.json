@@ -5,7 +5,7 @@
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "skipLibCheck": true,
+    "skipLibCheck": true, // ~.d.ts 의 오류방지 및 성능
 
     /* Bundler mode */
     "moduleResolution": "bundler",

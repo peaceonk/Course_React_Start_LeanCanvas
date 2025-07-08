@@ -17,6 +17,11 @@ export default tseslint.config([
       reactRefresh.configs.vite,
       prettier, // eslint-config-prettier (eslint&prettier 충돌방지)
     ],
+    rules: {
+      'no-unused-vars': 'warn',
+      //'semi': ['error', 'always'],
+      // 여기에 원하는 규칙을 추가
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
