@@ -1,4 +1,4 @@
-import TailwindButton from './components/AppTailwindCss/TailwindButton';
+import TailwindButton from './components/CssStyling/AppTailwindCss/TailwindButton';
 
 function AppTailwindCss() {
   return (

@@ -1,6 +1,20 @@
 import React from 'react';
-import { useParams, useSearchParams, useLocation } from 'react-router-dom';
+// import { useParams, useSearchParams, useLocation } from 'react-router-dom';
 
+import CanvasTitle from 'components/Canvas/CanvasTitle';
+import LeanCanvas from 'components/Canvas/LeanCanvas';
+
+const CanvasDetail: React.FC = () => {
+  return (
+    <div>
+      <CanvasTitle />
+      <LeanCanvas />
+    </div>
+  );
+};
+export default CanvasDetail;
+
+/* 
 // 예시 데이터
 const canvases = [
   {
@@ -64,5 +78,4 @@ const CanvasDetail: React.FC = () => {
     </div>
   );
 };
-
-export default CanvasDetail;
+*/

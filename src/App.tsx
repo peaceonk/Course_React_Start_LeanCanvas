@@ -3,7 +3,7 @@ import './App.css';
 // import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { Header } from './components/Header';
+import { Header, Main } from 'components/common/';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <Main>
+        <Outlet />
+      </Main>
     </>
   );
 }
