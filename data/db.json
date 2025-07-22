@@ -1,0 +1,52 @@
+{
+  "canvases": [
+    {
+      "id": 1,
+      "title": "친환경 도시 농업 플랫폼",
+      "lastModified": "2023-06-15",
+      "category": "농업"
+    },
+    {
+      "id": 2,
+      "title": "AI 기반 건강 관리 서비스",
+      "lastModified": "2023-07-02",
+      "category": "헬스케어"
+    },
+    {
+      "id": 3,
+      "title": "온라인 교육 통합 솔루션",
+      "lastModified": "2023-08-10",
+      "category": "교육"
+    },
+    {
+      "id": 4,
+      "title": "스마트 물류 자동화 시스템",
+      "lastModified": "2023-09-01",
+      "category": "물류"
+    },
+    {
+      "id": 5,
+      "title": "모바일 금융 관리 앱",
+      "lastModified": "2023-09-18",
+      "category": "금융"
+    },
+    {
+      "id": 6,
+      "title": "실시간 번역 챗봇",
+      "lastModified": "2023-10-05",
+      "category": "IT"
+    },
+    {
+      "title": "d1b1_새로운 린 캔버스",
+      "lastModified": "2025-07-22 16:03:26",
+      "category": "신규",
+      "id": 7
+    },
+    {
+      "title": "879b_새로운 린 캔버스",
+      "lastModified": "2025-07-22 16:06:51",
+      "category": "신규",
+      "id": 8
+    }
+  ]
+}

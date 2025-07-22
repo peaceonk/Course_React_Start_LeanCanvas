@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { FaCheck, FaEdit } from 'react-icons/fa';
 
 type CanvasTitleProps = {
-  titleValue?: string;
+  titleValue: string;
 };
 
-const CanvasTitle: React.FC<CanvasTitleProps> = () => {
+const CanvasTitle: React.FC<CanvasTitleProps> = titleValue => {
   const [isEditing, setIsEditing] = useState(false);
-  const [title, setTitle] = useState('Lean Canvas');
+  const [title, setTitle] = useState(titleValue);
   const [editingTitle, setEditingTitle] = useState(title);
 
   const handleChangeDoneTitle = () => {

@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import { useParams, useSearchParams, useLocation } from 'react-router-dom';
 
+import { Tdata } from '@app-types/canvas';
 import CanvasTitle from 'components/Canvas/CanvasTitle';
 import LeanCanvas from 'components/Canvas/LeanCanvas';
+import { useParams } from 'react-router-dom';
+import { getCanvasById } from '@api/canvas';
 
 const CanvasDetail: React.FC = () => {
+  const { id } = useParams();
+  const [canvas, setCanvas] = useState<Tdata>();
+
+  useEffect(() => {
+    const fetchCanvas = async () => {
+      try {
+        const data = await getCanvasById(Number(id));
+        setCanvas(data);
+      } catch (error) {
+        console.error('CanvasDetail > useEffect > error : ', error);
+      }
+    };
+
+    fetchCanvas();
+  }, [id]);
+
   return (
     <div>
-      <CanvasTitle />
+      <CanvasTitle titleValue={canvas?.title} />
       <LeanCanvas />
     </div>
   );

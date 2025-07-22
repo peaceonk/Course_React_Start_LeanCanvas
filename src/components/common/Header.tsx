@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import {
-  // useNavigate,
-  Link,
-  NavLink,
-} from 'react-router-dom';
+import { useNavigate, Link, NavLink } from 'react-router-dom';
 
 import {
   FaHome,
@@ -14,6 +10,8 @@ import {
 } from 'react-icons/fa';
 import './Header.css';
 
+import Button from 'components/common/Button';
+
 interface navItem {
   id: string;
   label: string;
@@ -22,6 +20,7 @@ interface navItem {
 }
 
 const Header: React.FC = () => {
+  const navigate = useNavigate();
   const navItems: navItem[] = [
     { id: 'home', label: 'Home', icon: <FaHome />, to: '/' },
     { id: 'about', label: 'About', icon: <FaInfoCircle />, to: '/about' },
@@ -50,7 +49,14 @@ const Header: React.FC = () => {
         <button className="md:hidden" onClick={toggleMenu}>
           <FaBars />
         </button>
-        {/* <Button className="hidden md:block">짐코딩 강의</Button> */}
+        <Button
+          className="hidden md:block"
+          onClick={() => {
+            navigate('/');
+          }}
+        >
+          홈으로 돌아가기
+        </Button>
       </div>
 
       {/* Mobile Menu */}
